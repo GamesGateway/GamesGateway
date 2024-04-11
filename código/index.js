@@ -1,5 +1,5 @@
 function produtos() {
-    fetch(`http://localhost:3000/prod`)
+    fetch(`https://gamesgateway.glitch.me/prod`)
       .then(res => res.json())
       .then(data => {
         let str = '';
@@ -35,7 +35,7 @@ function produtos() {
   }
   
   function pagamento() {
-    fetch(`http://localhost:3000/pag`)
+    fetch(`https://gamesgateway.glitch.me/pag`)
       .then(res => res.json())
       .then(data => {
         let str = '';
@@ -80,7 +80,7 @@ function produtos() {
     pesquisa.addEventListener('input', function () {
       const searchTerm = this.value.toLowerCase();
   
-      fetch(`http://localhost:3000/prod?nome=${searchTerm}`)
+      fetch(`https://gamesgateway.glitch.me/prod?nome=${searchTerm}`)
         .then(res => res.json())
         .then(data => {
           if (searchTerm.length === 0 || data.length === 0) {
