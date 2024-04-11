@@ -1,0 +1,17 @@
+#footer{
+    position: fixed;
+    bottom:0%;
+    width: 100%;
+}
+
+@media screen and (max-height: 741px) {
+    #footer{
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #footer{
+        position: relative;
+    }
+}
