@@ -11,11 +11,11 @@
 #searchResults {
     display: flex;
     position: absolute;
-    align-items: center;
     border: 1px solid #000000;
     max-height: 200px;
     overflow-y: auto;
     z-index: 1;
+    left: -2px;
     overflow-x: hidden;
 }
 
@@ -73,17 +73,7 @@ a:hover,
 }
 
 .card {
-    height: 480px;
-}
-
-.promopreco {
-    position: absolute;
-    bottom: 0px;
-    /* Ajuste essa propriedade conforme necessário para posicionar o botão verticalmente */
-    left: 22%;
-    /* Posiciona o botão no centro horizontalmente */
-    transform: translateX(-50%);
-    /* Ajusta o botão para que fique centralizado horizontalmente */
+    height: 481px;
 }
 
 hr {
