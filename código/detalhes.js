@@ -1,7 +1,7 @@
 function detalhes() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
-    fetch(`http://localhost:3000/prod?id=${productId}`)
+    fetch(`https://gamesgateway.glitch.me/prod?id=${productId}`)
       .then(res => res.json())
       .then(data => {
         let str = '';
@@ -81,7 +81,7 @@ function detalhes() {
   });
   
   function produtosParecidos(Varcategoria, Id) {
-    fetch(`http://localhost:3000/prod?categoria=${Varcategoria}`)
+    fetch(`https://gamesgateway.glitch.me/prod?categoria=${Varcategoria}`)
       .then(res => res.json())
       .then(data => {
         let str = '';
