@@ -6,9 +6,9 @@
 ## Integrantes da equipe
  - [Armintas Fernandes](https://github.com/ArmintasFilho)
  - [Arthur Trindade](https://github.com/arthurtrin117)
- - [João Lucas]()
+ - [João Lucas](https://github.com/JoaoL-Menezes)
  - [João Severino]()
- - [Matheus Roberto]()
+ - [Matheus Roberto](https://github.com/ma7heusS00)
  - [Thiago Augusto]()
 
 ## Quadro de tarefas
