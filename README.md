@@ -1,7 +1,3 @@
-<h4 align="center"> 
-    :construction:  Projeto em construção  :construction:
-</h4>
-
 # Game's Gateway
   O objetivo desse projeto é produzir um e-commerce chamado Game's Gateway, para a venda de jogos e hardware. 
 
