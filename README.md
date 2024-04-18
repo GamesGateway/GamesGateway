@@ -28,4 +28,4 @@ Este diretório amazena todo o código fonte do projeto e adota uma hierarquia b
 ## relatório
 Esta pasta arquiva toda a documentação do projeto.
 
-Na pasta `relatório`, possuí uma subpasta chamada `imagens`, onde armazena todas as imagens utilizadas para elaboração da documentação [relatório técnico - TEMPLATE.md](relatório/relatório%20técnico%20-%20TEMPLATE.md) 
+Na pasta `relatório`, possuí uma subpasta chamada `imagens`, onde armazena todas as imagens utilizadas para elaboração da documentação [relatório técnico - TEMPLATE.md](relatório/relatório%20técnico%20-%20TAMPLATE.md) 
