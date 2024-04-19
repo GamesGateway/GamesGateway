@@ -36,7 +36,6 @@ Análise e Desenvolvimento de Sistemas.
   - [Atribuições da Equipe](#atribuições-da-equipe)
 - [Projeto de Interface](#projeto-de-interface)
   - [Wireframes](#wireframes)
-  - [Fluxo de Usuário](#fluxo-de-usuário)
 - [Conclusões](#conclusões)
 
 # Resumo 
@@ -111,7 +110,7 @@ Nesta parte da documentação criamos uma tabela onde mostra o local onde a docu
 |----------------------------------|:--------------:|-------------------------------------------------------------------------------------------------------|
 |Documentação                      |    GitHub      | https://github.com/TIEcommerce/GamesGateway/blob/main/relatório/relatório%20técnico%20-%20TAMPLATE.md |
 |Repositório de código fonte       |    GitHub      | https://github.com/TIEcommerce/GamesGateway/tree/main/código                                          |
-|Projeto de interface & Wireframes |    GitHub      | https://drive.google.com/drive/folders/1AgamKD8nvYg_tEi0Z0Cg-067wkyfizLd?usp=share_link               |
+|Projeto de interface & Wireframes |    GitHub      | https://github.com/TIEcommerce/GamesGateway/tree/main/relatório/imagens)                              |
 |Gerenciamento do Projeto          |    Trello      | https://trello.com/b/vMjaw61v/aplicação-interativa-ecommerce-de-jogos                                 |
 
 # Gerenciamento da Equipe 
@@ -157,39 +156,37 @@ Para fazer os wireframes e o fluxo de usuário nosso grupo optou por utilizar o 
 
 ### Home.
 
-![Home](imagens/home.jpg)
+![Home](imagens/menu.png)
 
-### Meu Perfil.
+### Descrição do Produto.
 
-![Meu Perfil](imagens/meuperfil.jpg)
+![Descrição do produto](imagens/descricaoproduto.png)
 
-### Fazer Pedido.
+### Carrinho 
 
-![Fazer Pedido](imagens/fazerpedido.jpg)
-
-### Quem somos? 
-
-![Quem somos?](imagens/quemsomos.jpg)
+![Carrinho](imagens/carrinho.png)
 
 ### Login.
 
-![Login](imagens/login.jpg)
+![Login](imagens/login.png)
+
+### Esqueceu a senha?
+
+![Esqueceu a senha?]()
 
 ### Cadastrar.
 
-![Cadastrar](imagens/cadastrar.jpg)
+![Cadastrar](imagens/cadastro.png)
 
-## Fluxo de usuário. 
+### Quem somos? 
 
-Nesta parte fazemos o fluxo das atividades do site.
-
-![Fluxo de usuário](imagens/fluxo.png)
+![Quem somos?](imagens/quemsomos.png)
 
 
 # Conclusões
+O objetivo principal do projeto foi criar um ecommerce (comércio eletrônico) com uma interface intuitiva e rica em informações, que atendessem 
+as expectativas dos nossos usuários. Apesar de parecer fácil contruir um ecommerce, tivemos algumas dificuldades que não foram possíveis alcançar, porém será trabalhada em um projeto futuro, como a tela de redefinir senha, e implementação de formas de pagamento do site. Tivemos também difuculdades que foram possíveis de alcançar como a implementação da API, deixando-a online através da ultilização do site Glitch.me. 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Apesar das dificuldades de implementação de algumas funcionalidades o projeto conseguiu resultados satisfatórios. 
 
-> Finalize escrevendo um ou dois parágrafos para relembrar o objetivo do projeto, 
-> o que foi possível alcançar e o que ficou para um trabalho futuro, e relembrando
-> as principais dificuldes encontradas e como foi possível contorná-las. 
+Se quiserem ver a API construída por [Armintas Fernandes](https://github.com/ArmintasFilho) sigam as instruções a seguir, acesse o link: [https://glitch.com/~gamesgateway](https://glitch.com/~gamesgateway), desça a página e clica em "View source" para ver a descrição e instrução de como usar a API.
