@@ -1,0 +1,55 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#email{
+    border-color: black;
+    width: 90%;
+}
+
+#password-field1{
+    border-color: black;
+    border-right: none;
+    border-start-end-radius:unset;
+    border-end-end-radius: unset;
+    width: 77%;
+}
+
+.linklogin{
+    color: black;
+}
+
+#enviar{
+    width: 90%;
+}
+
+.card{
+    height: 100%;
+}
+
+.naopossuiconta{
+    height: 20px;
+}
+
+.hr{
+    width: 90%;
+}
+
+#footer{
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+}
+
+@media screen and (max-height: 741px) {
+    #footer{
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #footer{
+        position: relative;
+    }
+}
