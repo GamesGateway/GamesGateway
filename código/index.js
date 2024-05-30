@@ -1,9 +1,39 @@
+function setNome() {
+  const usuario_id = localStorage.getItem('logado');
+  const usuario_nome = localStorage.getItem('nome');
+
+  if (usuario_id != -1) {
+    var meuElemento = document.getElementById("link");
+    meuElemento.style.display = "none";
+
+    document.getElementById("boneco").innerHTML = "<i class='bi bi-person-fill fs-1 text-success'></i>"
+    document.getElementById('nome').innerHTML = usuario_nome + " " + "<button type='button' class='btn btn-outline-danger btn-sm mx-1' id='sair'><i class='bi bi-box-arrow-left' id='sair'></i></button>";
+  }
+  else {
+    var meuElemento = document.getElementById("nome");
+    meuElemento.style.display = "none";
+
+    document.getElementById("boneco").innerHTML = "<i class='bi bi-person-fill fs-1 text-dark'></i>"
+    document.getElementById('link').innerHTML = "<a href='login.html'> <b>Entre</b> ou <b>cadastra-se</b><br> para ver seus pedidos</a>";
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('nome').addEventListener('click', function (event) {
+    if (event.target && event.target.id === 'sair') {
+      alert('deslogado');
+      localStorage.setItem('logado', -1);
+      location.reload();
+    }
+  });
+});  
+
 function produtos() {
-  document.getElementById('tela').innerHTML = 
-  `<div class="col-12 mt-2">
+  document.getElementById('tela').innerHTML =
+    `<div class="col-12 mt-2">
       <center>
       <h3 class="text-success">Aguarde</h4>
-      <p class="text-light fs-4">Pedimos desculpas pela demora.<br> Estamos carregando os produtos para você.<br> Por favor, aguarde um momento enquanto buscamos as melhores ofertas.<br> Obrigado pela sua paciência!</p>
+      <p class="text-light fs-4">Pedios desculpas pela demora.<br> Estamos carregando os produtos para você.<br> Por favor, aguarde um momento enquanto buscamos as melhores ofertas.<br> Obrigado pela sua paciência!</p>
       <div class="spinner-border text-success" role="status">
         <span class="visually-hidden">Carregando...</span>
       </div>
@@ -44,8 +74,8 @@ function produtos() {
 }
 
 function pagamento() {
-  document.getElementById('tela_pagamento').innerHTML = 
-  `<div class="col-12 d-flex">
+  document.getElementById('tela_pagamento').innerHTML =
+    `<div class="col-12 d-flex">
       <div class="spinner-border text-success" role="status">
         <span class="visually-hidden">Carregando...</span>
       </div>
@@ -121,7 +151,7 @@ function pesquisa() {
         hideResults();
       });
   });
-  
+
   // Evento de clique fora do modal de resultados para fechar
   document.addEventListener('click', function (event) {
     if (!searchResults.contains(event.target) && event.target !== pesquisa) {
@@ -132,4 +162,5 @@ function pesquisa() {
 
 document.addEventListener('DOMContentLoaded', function () {
   pesquisa();
+  setNome();
 });

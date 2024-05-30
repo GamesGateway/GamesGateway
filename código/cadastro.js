@@ -42,41 +42,42 @@ function validarFormulario() {
 }
 
 // Adicionar função para um evento de envio ao formulário (no HTML)
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('formulario').addEventListener('submit', function (event) {
+        // Chame a função validarFormulario() e verifique o valor de retorno
+        if (!validarFormulario()) {
+            event.preventDefault(); // Impede o envio do formulário
+        } else {
+            // Se a validação for bem-sucedida, envie os dados para o servidor
+            event.preventDefault(); // Ainda queremos prevenir o envio do formulário padrão
+            const nomeUsuario = document.getElementById('nome').value;
+            const emailUsuario = document.getElementById('email').value;
+            const senhaUsuario = document.getElementById('password-field1').value;
 
-document.getElementById('formulario').addEventListener('submit', function (event) {
-    // Chame a função validarFormulario() e verifique o valor de retorno
-    if (!validarFormulario()) {
-        event.preventDefault(); // Impede o envio do formulário
-    } else {
-        // Se a validação for bem-sucedida, envie os dados para o servidor
-        event.preventDefault(); // Ainda queremos prevenir o envio do formulário padrão
-        const nomeUsuario = document.getElementById('nome').value;
-        const emailUsuario = document.getElementById('email').value;
-        const senhaUsuario = document.getElementById('password-field1').value;
-
-        fetch('http://localhost:3000/inserirDados', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                nome: nomeUsuario,
-                email: emailUsuario,
-                senha: senhaUsuario,
-            }),
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert('Cadastro realizado com sucesso!');
-                    // Redirecionar para a página Login.html
-                    window.location.href = 'Login.html';
-                } else {
-                    alert('Ocorreu um erro ao inserir os dados.');
-                }
+            fetch('http://localhost:3000/inserirDados', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    nome: nomeUsuario,
+                    email: emailUsuario,
+                    senha: senhaUsuario,
+                }),
             })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
-    }
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Cadastro realizado com sucesso!');
+                        // Redirecionar para a página Login.html
+                        window.location.href = 'Login.html';
+                    } else {
+                        alert('Ocorreu um erro ao inserir os dados.');
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        }
+    });
 });

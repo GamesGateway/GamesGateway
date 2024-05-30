@@ -7,7 +7,7 @@ function detalhes() {
       let str = '';
       data.forEach(prod => {
         var categoria = prod.categoria;
-        produtosParecidos(categoria, productId)
+        produtosParecidos(categoria, productId);
         str += `
               <div class="row mt-2">
                   <div class="col-md-2 col-lg-1">
@@ -56,11 +56,50 @@ function detalhes() {
                           á vista:
                           R$ ${prod.por}
                       </h4> 
-                      <button class="btn btn-success mb-2"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>       
+                      <button class="btn btn-success mb-2" id="addCarrinho"><i class="bi bi-cart-plus"></i> Adicionar ao carrinho</button>       
                   </div>
               </div>`;
       });
+
       document.getElementById('teladetalhes').innerHTML = str;
+
+      // Adicionar o event listener ao botão depois que ele for inserido no DOM
+      const addCarrinhoButton = document.getElementById('addCarrinho');
+      if (addCarrinhoButton) {
+        addCarrinhoButton.addEventListener('click', function (event) {
+          const url = new URL(window.location.href);
+          const codProduto = url.searchParams.get('id');
+          const usuario_id = localStorage.getItem('logado'); // Obtém o ID do usuário logado do localStorage
+          
+          if (!codProduto || !usuario_id) {
+            alert("Error: Produto ou usuário não encontrado.");
+          } else {
+            fetch('http://localhost:3000/inserirCarrinho', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                usuario_id: usuario_id,
+                codProduto: codProduto,
+              }),
+            })
+            .then(response => response.json())
+            .then(data => {
+              if (data.success) {
+                alert('Adicionado ao carrinho com sucesso!');
+              } else {
+                alert('erro.');
+              }
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });
+          }
+        });
+      } else {
+        console.error('Elemento com id "addCarrinho" não foi encontrado no DOM.');
+      }
     })
     .catch(error => {
       console.error('Erro:', error);
