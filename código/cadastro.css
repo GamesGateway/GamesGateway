@@ -1,0 +1,47 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.card{
+    height: 100%;
+}
+
+#email,#nome{
+    border-color: black;
+    width: 90%;
+}
+
+#password-field1, #password-field2{
+    border-color: black;
+    border-right: none;
+    border-start-end-radius:unset;
+    border-end-end-radius: unset;
+    width: 77%;
+}
+
+.linkcadastro{
+    color: black;
+}
+
+#cadastrar{
+    width: 90%;
+}
+
+#footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-height: 741px) {
+    #footer{
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #footer{
+        position: relative;
+    }
+}
