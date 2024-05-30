@@ -1,4 +1,15 @@
 function produtos() {
+  document.getElementById('tela').innerHTML = 
+  `<div class="col-12 mt-2">
+      <center>
+      <h3 class="text-success">Aguarde</h4>
+      <p class="text-light fs-4">Pedimos desculpas pela demora.<br> Estamos carregando os produtos para você.<br> Por favor, aguarde um momento enquanto buscamos as melhores ofertas.<br> Obrigado pela sua paciência!</p>
+      <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Carregando...</span>
+      </div>
+      </center>
+    </div>`;
+
   fetch(`https://gamesgateway.glitch.me/prod`)
     .then(res => res.json())
     .then(data => {
@@ -33,6 +44,13 @@ function produtos() {
 }
 
 function pagamento() {
+  document.getElementById('tela_pagamento').innerHTML = 
+  `<div class="col-12 d-flex">
+      <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Carregando...</span>
+      </div>
+    </div>`;
+
   fetch(`https://gamesgateway.glitch.me/pag`)
     .then(res => res.json())
     .then(data => {
@@ -51,12 +69,10 @@ function pagamento() {
 function pesquisa() {
   const pesquisa = document.getElementById('pesquisa');
   const searchResults = document.getElementById('searchResults');
-
   // Função para mostrar os resultados da pesquisa
   function showResults(results) {
     // Limpa os resultados anteriores
     searchResults.innerHTML = '';
-
     // Adiciona os novos resultados
     results.forEach(result => {
       const resultItem = document.createElement('div');
@@ -64,20 +80,16 @@ function pesquisa() {
       resultItem.innerHTML = result;
       searchResults.appendChild(resultItem);
     });
-
     // Exibe os resultados
     searchResults.style.display = 'block';
   }
-
   // Função para esconder os resultados da pesquisa
   function hideResults() {
     searchResults.style.display = 'none';
   }
-
   // Evento de digitação no campo de pesquisa
   pesquisa.addEventListener('input', function () {
     const searchTerm = this.value.toLowerCase();
-
     fetch(`https://gamesgateway.glitch.me/prod?nome=${searchTerm}`)
       .then(res => res.json())
       .then(data => {
@@ -109,7 +121,7 @@ function pesquisa() {
         hideResults();
       });
   });
-
+  
   // Evento de clique fora do modal de resultados para fechar
   document.addEventListener('click', function (event) {
     if (!searchResults.contains(event.target) && event.target !== pesquisa) {

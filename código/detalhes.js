@@ -67,19 +67,6 @@ function detalhes() {
     });
 }
 
-
-$(document).ready(function () {
-  // Desativa a rotação automática do carrossel
-  $('#carouselExampleIndicators').carousel({
-    interval: false
-  });
-
-  $('.vertical-images img').click(function () {
-    var targetSlide = $(this).data('slide-to');
-    $('#carouselExampleIndicators').carousel(parseInt(targetSlide));
-  });
-});
-
 function produtosParecidos(Varcategoria, Id) {
   fetch(`https://gamesgateway.glitch.me/prod?categoria=${Varcategoria}`)
     .then(res => res.json())
