@@ -2,7 +2,7 @@ function setNome() {
   const usuario_id = localStorage.getItem('logado');
   const usuario_nome = localStorage.getItem('nome');
 
-  if (usuario_id != -1) {
+  if (usuario_id != -1 && usuario_id != null) {
     var meuElemento = document.getElementById("link");
     meuElemento.style.display = "none";
 
@@ -17,6 +17,22 @@ function setNome() {
     document.getElementById('link').innerHTML = "<a href='login.html'> <b>Entre</b> ou <b>cadastra-se</b><br> para ver seus pedidos</a>";
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const carrinhoIcone = document.querySelector('.bi-cart');
+
+  if (carrinhoIcone) { // Verifica se o elemento foi encontrado
+    carrinhoIcone.addEventListener('click', function (event) {
+      const usuario_id = localStorage.getItem('logado');
+      if (usuario_id == -1 || usuario_id == null) {
+        location.href = "login.html";
+      }
+      else{
+        location.href = "carrinho.html";
+      }
+    });
+  }
+});
 
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('nome').addEventListener('click', function (event) {
