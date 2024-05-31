@@ -71,8 +71,8 @@ function detalhes() {
           const codProduto = url.searchParams.get('id');
           const usuario_id = localStorage.getItem('logado'); // Obtém o ID do usuário logado do localStorage
           
-          if (!codProduto || !usuario_id) {
-            alert("Error: Produto ou usuário não encontrado.");
+          if (!codProduto || !usuario_id || usuario_id == -1) {
+            location.href= "login.html"
           } else {
             fetch('http://localhost:3000/inserirCarrinho', {
               method: 'POST',

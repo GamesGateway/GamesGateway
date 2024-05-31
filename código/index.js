@@ -20,7 +20,6 @@ function setNome() {
 
 document.addEventListener('DOMContentLoaded', function () {
   const carrinhoIcone = document.querySelector('.bi-cart');
-
   if (carrinhoIcone) { // Verifica se o elemento foi encontrado
     carrinhoIcone.addEventListener('click', function (event) {
       const usuario_id = localStorage.getItem('logado');
