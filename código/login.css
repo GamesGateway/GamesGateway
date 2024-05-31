@@ -3,53 +3,69 @@
     padding: 0%;
 }
 
-#email{
-    border-color: black;
-    width: 90%;
+#email::placeholder,
+#password-field1::placeholder {
+    color: rgb(253, 252, 249);
 }
 
-#password-field1{
+.form-control:focus {
+    box-shadow: none;
+    /* Remove a sombra da borda */
+
+}
+
+#email {
+    border-color: black;
+    width: 93.5%;
+}
+
+#password-field1 {
     border-color: black;
     border-right: none;
-    border-start-end-radius:unset;
+    border-start-end-radius: unset;
     border-end-end-radius: unset;
-    width: 77%;
+    width: 80%;
 }
 
-.linklogin{
-    color: black;
+.linklogin {
+    color: rgb(45, 109, 194);
 }
 
-#enviar{
-    width: 90%;
+.linklogin:hover{
+    text-decoration:underline;
+    color: rgb(45, 107, 194);
 }
 
-.card{
+#enviar {
+    width: 95%;
+}
+
+.card {
     height: 100%;
 }
 
-.naopossuiconta{
+.naopossuiconta {
     height: 20px;
 }
 
-.hr{
+.hr {
     width: 90%;
 }
 
-#footer{
-   width: 100%;
-   position: absolute;
-   bottom: 0;
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 @media screen and (max-height: 731px) {
-    #footer{
+    #footer {
         position: relative;
     }
 }
 
-@media screen and (max-width: 850px){
-    #footer{
+@media screen and (max-width: 850px) {
+    #footer {
         position: relative;
     }
 }

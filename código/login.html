@@ -55,10 +55,10 @@
                     <li class=" nav-item  col-md-12 col-lg-3 mx-4 mt-2">
                         <div class="row">
                             <div class="col-1 col-xl-1" id="boneco">
-                                
+
                             </div>
                             <div class="col-9 col-xl-9 mx-3 mt-3 text-light" id="usuario_nome">
-                               
+
                             </div>
                             <div class="col-9 col-xl-9 mx-3 mt-1 " id="link">
 
@@ -71,7 +71,7 @@
                             <a rel="stylesheet"><i class="fs-2 bi bi-cart link"></i></a>
                         </li>
                         <div class="num_itens">
-                            
+
                         </div>
                     </div>
                 </ul>
@@ -80,23 +80,26 @@
     </header>
 
     <main class="container-fluid mt-5">
-        <div class="card col-10 col-sm-6 col-lg-4 col-xl-3 mx-auto">
+        <div class=" col-10 col-sm-6 col-lg-4 col-xl-3 mx-auto">
             <center>
-                <h1 class="text-dark mt-4">Login</h1>
+                <i class="bi bi-person-lock text-success fs-1"></i>
+                <h4 class="text-light mt-2">Já possui uma conta?</h4>
+                <small class="text-light">Informe seus dados abaixo para efetuar o acesso.</small>
             </center>
-            <form class="formulario " id="formulario" onsubmit="return validarFormulario()">
-
+            <form class="formulario " id="formulario">
                 <div class="d-flex justify-content-center mt-4">
-                    <input type="email" id="email" class="form-control" placeholder="Digite seu e-mail">
+                    <input type="email" id="email" class="form-control" placeholder="E-mail *"
+                        style="background-color:transparent; border-color:rgb(253, 252, 249); color: rgb(253, 252, 249);">
                 </div>
 
                 <div class="input-group-append d-flex justify-content-center mt-4">
-                    <input type="password" id="password-field1" class="form-control" placeholder="Digite sua senha"
-                        minlength="8" title="A senha deve possuir no mínimo 8 caracteres">
+                    <input type="password" id="password-field1" class="form-control" placeholder="Senha *"
+                        minlength="8" title="A senha deve possuir no mínimo 8 caracteres"
+                        style="background-color: transparent; border-color: rgb(253, 252, 249); color: rgb(253, 252, 249);">
 
                     <button id="togglePassword1" type="button" class="btn btn-secondary"
-                        style="background-color: white; border-top-left-radius: 0; border-bottom-left-radius: 0;">
-                        <i class="bi bi-eye" style="color: black;"></i>
+                        style="background-color: transparent; border-top-left-radius: 0; border-bottom-left-radius: 0; border-color:rgb(253, 252, 249) ;">
+                        <i class="bi bi-eye" style="color: rgb(253, 252, 249);"></i>
                     </button>
                 </div>
 
@@ -104,15 +107,12 @@
                     <button type="submit" class="btn btn-success" id="enviar">Entrar</button>
                 </div>
             </form>
-            <center>
-                <hr class="hr mt-4">
-            </center>
-
-            <a href="" class="linklogin mb-4 justify-content-center d-flex">Esqueceu a senha?</a>
+            <!--<a href="" class="linklogin justify-content-center d-flex mt-2">Esqueci minha senha</a>-->
         </div>
 
-        <div class="card mx-auto col-10 col-sm-6 col-lg-4 col-xl-3 mt-2">
-            <a href="cadastro.html" class="linklogin mt-2 mb-2 justify-content-center d-flex">Não possui conta? cadastra-se</a>
+        <div class="mx-auto col-10 col-sm-6 col-lg-4 col-xl-3 mt-2">
+            <a href="cadastro.html" class="linklogin mt-2 mb-2 justify-content-center d-flex">Não tem cadastro?
+                cadastra-se</a>
         </div>
     </main>
 
@@ -161,4 +161,5 @@
         <center class="bg-dark text-black">Copyright @ 2024 Game's Gateway</center>
     </footer>
 </body>
+
 </html>

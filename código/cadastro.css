@@ -7,9 +7,22 @@
     height: 100%;
 }
 
+#email::placeholder,
+#nome::placeholder,
+#password-field1::placeholder, 
+#password-field2::placeholder {
+    color: rgb(253, 252, 249);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    /* Remove a sombra da borda */
+
+}
+
 #email,#nome{
     border-color: black;
-    width: 90%;
+    width: 93.5%;
 }
 
 #password-field1, #password-field2{
@@ -17,15 +30,19 @@
     border-right: none;
     border-start-end-radius:unset;
     border-end-end-radius: unset;
-    width: 77%;
+    width: 83%;
 }
 
-.linkcadastro{
-    color: black;
+.linkcadastro {
+    color: rgb(45, 109, 194);
 }
 
+.linkcadastro:hover{
+    text-decoration:underline;
+    color: rgb(45, 107, 194);
+}
 #cadastrar{
-    width: 90%;
+    width: 95%;
 }
 
 #footer{

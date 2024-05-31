@@ -80,37 +80,43 @@
     </header>
 
     <main class="container-fluid mt-5">
-        <div class="card col-10 col-sm-6 col-lg-4 col-xl-3 mx-auto">
+        <div class="col-10 col-sm-6 col-lg-4 col-xl-3 mx-auto">
             <center>
-                <h1 class="text-dark mt-4">Cadastre-se</h1>
+                <i class="bi bi-person-add text-success fs-1"></i>
+                <h4 class="text-light mt-2">Criar minha conta</h4>
+                <small class="text-light">Informe seus dados abaixo para efetuar o cadastro.</small>
             </center>
 
-            <form class="formulario" id="formulario" onsubmit="return validarFormulario()">
+            <form class="formulario" id="formulario">
 
                 <div class="d-flex justify-content-center mt-2">
-                    <input type="text" id="nome" class="form-control" placeholder="Digite seu nome">
+                    <input type="text" id="nome" class="form-control" placeholder="Nome *"
+                    style="background-color: transparent; border-color: rgb(253, 252, 249); color: rgb(253, 252, 249);">>
                 </div>
 
                 <div class="d-flex justify-content-center mt-3">
-                    <input type="email" id="email" class="form-control" placeholder="Digite seu e-mail">
+                    <input type="email" id="email" class="form-control" placeholder="E-mail *" 
+                    style="background-color: transparent; border-color: rgb(253, 252, 249); color: rgb(253, 252, 249);">>
                 </div>
 
-                <div class="input-group-append d-flex justify-content-center mt-3">
-                    <input type="password" id="password-field1" class="form-control" placeholder="Digite uma senha"
-                        minlength="8" title="A senha deve possuir no mínimo 8 caracteres">
-                    <button id="togglePassword1" type="button" class="btn btn-secondary"
-                        style="background-color: white;  height: 38px; border-top-left-radius: 0; border-bottom-left-radius: 0;">
-                        <i class="bi bi-eye" style="color: black;"></i>
+                <div class="input-group-append d-flex justify-content-center mt-3 me-2">
+                    <input type="password" id="password-field1" class="form-control" placeholder="Senha *"
+                        minlength="8" title="A senha deve possuir no mínimo 8 caracteres"
+                        style="background-color: transparent; border-color: rgb(253, 252, 249); color: rgb(253, 252, 249);">
+                        <button id="togglePassword1" type="button" class="btn btn-secondary"
+                        style="background-color: transparent; border-top-left-radius: 0; border-bottom-left-radius: 0; border-color:rgb(253, 252, 249) ;">
+                        <i class="bi bi-eye" style="color: rgb(253, 252, 249);"></i>
                     </button>
                 </div>
 
-                <div class="input-group-append d-flex justify-content-center mt-3">
+                <div class="input-group-append d-flex justify-content-center mt-3 me-2">
                     <input type="password" id="password-field2" class="form-control"
-                        placeholder="Digite novamente a senha" minlength="8"
-                        title="A senha deve possuir no mínimo 8 caracteres">
-                    <button id="togglePassword2" type="button" class="btn btn-secondary"
-                        style="background-color: white; height: 38px; border-top-left-radius: 0; border-bottom-left-radius: 0;">
-                        <i class="bi bi-eye" style="color: black;"></i>
+                        placeholder="Repitir senha *" minlength="8"
+                        title="A senha deve possuir no mínimo 8 caracteres"
+                        style="background-color: transparent; border-color: rgb(253, 252, 249); color: rgb(253, 252, 249);">
+                        <button id="togglePassword2" type="button" class="btn btn-secondary"
+                        style="background-color: transparent; border-top-left-radius: 0; border-bottom-left-radius: 0; border-color:rgb(253, 252, 249) ;">
+                        <i class="bi bi-eye" style="color: rgb(253, 252, 249);"></i>
                     </button>
                 </div>
 
@@ -120,7 +126,7 @@
             </form>
         </div>
 
-        <div class="card mx-auto col-10 col-sm-6 col-lg-4 col-xl-3 mt-2">
+        <div class="mx-auto col-10 col-sm-6 col-lg-4 col-xl-3 mt-2">
             <a href="login.html" class="linkcadastro mt-2 mb-2 justify-content-center d-flex">Já possui uma conta?
                 Acessar</a>
         </div>
