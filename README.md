@@ -1,4 +1,4 @@
-<h4 align="center"> :construction: Projeto em construção :construction: </h4>
+<h4 align="center"> 🏛️ Projeto concluído 🏛️ </h4>
 
 # Game's Gateway
 O objetivo desse projeto é produzir um e-commerce chamado Game's Gateway, para a venda de jogos e hardware. 
@@ -7,9 +7,9 @@ O objetivo desse projeto é produzir um e-commerce chamado Game's Gateway, para 
  - [Armintas Fernandes](https://github.com/ArmintasFilho)
  - [Arthur Trindade](https://github.com/arthurtrin117)
  - [João Lucas](https://github.com/JoaoL-Menezes)
- - [João Severino]()
+ - [João Severino](https://github.com/JoaoVieiraADS)
  - [Matheus Roberto](https://github.com/ma7heusS00)
- - [Thiago Augusto]()
+ - [Thiago Augusto](https://github.com/thiago-Parreiras)
 
 ## Quadro de tarefas
 [Trello Game's Gateway](https://trello.com/b/vMjaw61v/aplicação-interativa-ecommerce-de-jogos)

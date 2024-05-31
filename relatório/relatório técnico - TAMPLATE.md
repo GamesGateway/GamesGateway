@@ -10,9 +10,10 @@ Análise e Desenvolvimento de Sistemas.
  - [Armintas Fernandes](https://github.com/ArmintasFilho)
  - [Arthur Trindade](https://github.com/arthurtrin117)
  - [João Lucas](https://github.com/JoaoL-Menezes)
- - [João Severino]()
+ - [João Severino](https://github.com/JoaoVieiraADS)
  - [Matheus Roberto](https://github.com/ma7heusS00)
- - [Thiago Augusto]()
+ - [Thiago Augusto](https://github.com/thiago-Parreiras)
+
 
 # Estrutura do Documento
 
@@ -124,9 +125,9 @@ Por utilizar o método ágil Scrum como base para definição do processo de des
 - Equipe de Desenvolvimento:
   - [Arthur Trindade](https://github.com/arthurtrin117) (Desenvolvedor Full-Stack)
   - [João Lucas](https://github.com/JoaoL-Menezes) (Desenvolvedor Full-Stack)
-  - [João Severino]() (Desenvolvedor Full-Stack)
+  - [João Severino](https://github.com/JoaoVieiraADS) (Desenvolvedor Full-Stack)
   - [Matheus Roberto](https://github.com/ma7heusS00) (Desenvolvedor Full-Stack)
-  - [Thiago Augusto]() (Desenvolvedor Full-Stack)
+  - [Thiago Augusto](https://github.com/thiago-Parreiras) (Desenvolvedor Full-Stack)
 
 ## Atribuições da Equipe
 As atribuições de cada integrante da equipe está organizado da seguinte forma:
