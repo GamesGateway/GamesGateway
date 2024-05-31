@@ -7,10 +7,10 @@ function setNome() {
     meuElemento.style.display = "none";
 
     document.getElementById("boneco").innerHTML = "<i class='bi bi-person-fill fs-1 text-success'></i>"
-    document.getElementById('nome').innerHTML = usuario_nome + " " + "<button type='button' class='btn btn-outline-danger btn-sm mx-1' id='sair'><i class='bi bi-box-arrow-left' id='sair'></i></button>";
+    document.getElementById('usuario_nome').innerHTML = usuario_nome + " " + "<button type='button' class='btn btn-outline-danger btn-sm mx-1' id='sair'><i class='bi bi-box-arrow-left' id='sair'></i></button>";
   }
   else {
-    var meuElemento = document.getElementById("nome");
+    var meuElemento = document.getElementById("usuario_nome");
     meuElemento.style.display = "none";
 
     document.getElementById("boneco").innerHTML = "<i class='bi bi-person-fill fs-1 text-dark'></i>"
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('nome').addEventListener('click', function (event) {
+  document.getElementById('usuario_nome').addEventListener('click', function (event) {
     if (event.target && event.target.id === 'sair') {
       alert('deslogado');
       localStorage.setItem('logado', -1);
