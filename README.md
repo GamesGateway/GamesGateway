@@ -9,7 +9,7 @@ O objetivo desse projeto é produzir um e-commerce chamado Game's Gateway, para 
  - [João Lucas](https://github.com/JoaoL-Menezes)
  - [João Severino](https://github.com/JoaoVieiraADS)
  - [Matheus Roberto](https://github.com/ma7heusS00)
- - [Thiago Augusto]()
+ - [Thiago Augusto](https://github.com/thiago-Parreiras)
 
 ## Quadro de tarefas
 [Trello Game's Gateway](https://trello.com/b/vMjaw61v/aplicação-interativa-ecommerce-de-jogos)
